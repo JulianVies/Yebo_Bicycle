@@ -1,0 +1,306 @@
+* {
+    font-family: "Myriad Pro";
+}
+
+body, img, div {
+    overflow-x: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*===================================
+            UTILITY CLASSES
+====================================*/
+.my-bold-title {
+    font-size: 17px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #4d4959;
+    font-weight: bolder;
+    font-family: "Arial";
+}
+
+.my-text-lead {
+    font-size: 20px;
+    color: #848789;
+    line-height: 1.7em;
+}
+
+.my-subtitle {
+    color: #4d4959;
+    font-weight: bolder;
+    font-family: "Arial";
+}
+
+.my-bg-black {
+    background: #282f35;
+}
+
+.my-black-btn {
+    font-size: 13px;
+    letter-spacing: 0.1rem;
+    font-family: "Arial";
+    width: 250px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 1px rgba(255, 255, 255, .5);
+    border-radius: 0;
+}
+
+.my-black-btn:hover {
+    transition: 0.4s;
+    background: white;
+    color: black !important;
+}
+
+.my-green-btn {
+    width: 90px;
+    height: 50px;
+    background-color: #64c29e;
+    border: 0;
+    color: white;
+    font-family: "Arial";
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.pad-top-btm {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.my-light-subtitle {
+    font-family: "Arial";
+    font-weight: lighter;
+    opacity: 0.5;
+}
+
+.form-control {
+    height: 50px;
+}
+
+.form-control::placeholder {
+    font-family: "Arial";
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.my-font-sm {
+    font-size: 13px;
+    opacity: 0.7;
+}
+/*===================================
+                HEADER
+====================================*/
+.navbar {
+    padding-left:0!important;
+    padding-right:0!important;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.15s;
+}
+
+.nav-item a:hover {
+    color: #64c29e;
+}
+
+header {
+    background: url(../images/main-banner.jpg) no-repeat center/cover;
+    height: 100vh;
+}
+
+
+.nav-item {
+    width: 170px;
+    min-width: 165px;
+}
+
+
+/*===================================
+            SECTIONS
+====================================*/
+
+/*=========PRESENTATION========*/
+#presentation {
+    background: #f7f7f7;
+    padding: 6rem;
+}
+
+#presentation h3 {
+    padding-top: 2rem;
+}
+
+#presentation span {
+    font-weight: normal;
+    opacity: 0.5;
+    display: inline-block;
+    padding-left: 0.5rem;
+}
+
+
+/*=========MAIN GALLERY========*/
+/*1220px*/
+
+#main-gallery {
+    padding: 0;
+}
+
+.card-body p {
+    max-width: 75%;
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+.card,
+.card * {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.my-img-fluid {
+    height: auto;
+    width: 100%;
+    min-height: 100%;
+    min-width: 700px;
+}
+
+.my-line {
+    text-indent: -10000px;
+    height: 1px;
+    width: 10%;
+    opacity: 0.2;
+    border: grey 0.5px solid;
+    margin: 0 auto;
+}
+/***QUOTES***/
+#quotes {
+    background: #f7f7f7;
+}
+
+#quotes h5 {
+    padding-top: 2rem;
+}
+
+#quotes span {
+    font-weight: normal;
+    opacity: 0.5;
+    display: inline-block;
+    padding-left: 0.5rem;
+}
+/***SHOP***/
+#shop {
+    padding: 4.5rem 0;
+}
+
+/*****FORM****/
+#my-form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+#my-form * {
+    border-radius: 0;
+}
+
+/*===================================
+                FOOTER
+====================================*/
+footer {
+    background: #f7f7f7;
+}
+
+/*===================================
+            RESPONSIVE MEDIAS
+====================================*/
+@media only screen and (max-width: 1220px) {
+    .card-body p {
+        max-width: 90%;
+    }
+
+    .card-body img {
+        padding-top: 1rem;
+    }
+
+    #presentation {
+        padding: 3rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #logo {
+        text-indent: -9999px;
+        padding: 0 4rem;
+    }
+
+    .nav li {
+        padding: 1rem;
+        padding-top: 2.5rem;
+    }
+    form {
+        min-width: 300px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    header {
+        height: 70vh;
+        background: url(../images/banner-sm.png) no-repeat center/cover ;
+    }
+    #nav-lg {
+        display: none;
+    }
+    #nav-sm {
+        display: flex!important;
+    }
+
+    
+    .navbar-brand {
+        display: none;
+    }
+    
+    #presentation {
+        padding: 1rem;
+        min-height: 50vh;
+    }
+
+    #presentation h3,
+    #presentation h5 {
+        padding-top: 2rem;
+    }
+
+    #presentation p {
+        text-align: justify;
+        text-justify: inter-word;
+        width: 100% !important;
+        padding-top: 0 !important;
+    }
+
+    .my-line {
+        display: none;
+    }
+
+    img[alt="photo 5"],
+    img[alt="photo 7"] {
+        display: none;
+    }
+
+    .my-img-fluid {
+        min-width: 0px;
+        background: center;
+    }
+    form {
+        min-width: 270px;
+    }
+    form .d-flex {
+        flex-flow: column;
+    }
+}
